@@ -1,0 +1,15 @@
+<div class="card">
+    <i class="fa fa-envelope-o ml-auto mt-2 mr-2" aria-hidden="true"></i>
+    <div class="card__image__wrapper mx-auto">
+        <div class="card__image">
+            <img src="{{ userCard.avatar }}" alt="...">
+        </div>
+    </div>
+    <div class="user-card__group mt-2">
+        <p class="d-flex justify-content-between user-card__paragraph"><span class="paragraph-item__key">id:</span><span class="paragraph-item__value">{{ userCard.id }}</span></p>
+        <p class="d-flex justify-content-between user-card__paragraph"><span class="paragraph-item__key">email:</span><span class="paragraph-item__value">{{ userCard.email | slice:0:10 }}</span></p>
+        <p class="d-flex justify-content-between user-card__paragraph"><span class="paragraph-item__key">first_name:</span><span class="paragraph-item__value">{{ userCard.first_name }}</span></p>
+        <p class="d-flex justify-content-between user-card__paragraph"><span class="paragraph-item__key">last_name:</span><span class="paragraph-item__value">{{ userCard.last_name }}</span></p>
+        <p class="d-flex justify-content-between user-card__paragraph"><span class="paragraph-item__key">avatar:</span><span class="paragraph-item__value">{{ userCard.avatar | slice:0:10 }}</span></p>
+    </div>
+</div>

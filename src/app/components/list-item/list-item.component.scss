@@ -1,0 +1,63 @@
+@import '../../../styles/variables.scss';
+
+.card {
+    background: $secondary-color;
+    box-shadow: 0px 4px 20px #A5BCD2;
+    border-radius: 6px;
+}
+
+.fa-envelope-o:hover {
+    color: $primary-color;
+}
+
+.card__image__wrapper {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+    
+    border-radius: 10px;
+}
+
+.card__image {
+    width: 150px;
+    height: 150px;
+    margin: -25px;
+    
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.user-card__group {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.user-card__paragraph {
+    font-family: $primary-font;
+    
+    border-bottom: 2px solid rgba(122, 143, 165, 0.4);
+}
+
+.group-item__key {
+    font-weight: $primary-normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: $text-color;
+    text-transform: uppercase;
+}
+
+.group-item__value {
+    font-weight: $primary-bold;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: $secondary-text-color;
+}
+
